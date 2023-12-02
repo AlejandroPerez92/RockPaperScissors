@@ -41,4 +41,13 @@ public class RockPaperScissorsTest {
         var result = this.sut.rockPaperScissors(playerChoose, opponent);
         Assertions.assertEquals("player1", result);
     }
+
+    @Test
+    void GivenIHaveChosenRockWhenTheOpponentChoosesPaperThenTheOpponentShouldWin() {
+        var playerChoose = "rock";
+        var opponent = "paper";
+
+        var result = this.sut.rockPaperScissors(playerChoose, opponent);
+        Assertions.assertEquals("player2", result);
+    }
 }
