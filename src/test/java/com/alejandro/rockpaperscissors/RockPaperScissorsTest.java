@@ -14,8 +14,8 @@ public class RockPaperScissorsTest {
 
     @Test
     public void givenIhaveChosenRockWhenTheOpponentChoosesScissorsThenIShouldWin() {
-        var playerChoose = "rock";
-        var opponent = "scissors";
+        var playerChoose = Moves.ROCK;
+        var opponent = Moves.SCISSORS;
 
         var result = this.sut.rockPaperScissors(playerChoose, opponent);
         Assertions.assertEquals("player1", result);
@@ -23,8 +23,8 @@ public class RockPaperScissorsTest {
 
     @Test
     void GivenIHaveChosenScissorsWhenTheOpponentChoosesRockThenTheOpponentWin() {
-        var playerChoose = "scissors";
-        var opponent = "rock";
+        var playerChoose = Moves.SCISSORS;
+        var opponent = Moves.ROCK;
 
         var result = this.sut.rockPaperScissors(playerChoose, opponent);
         Assertions.assertEquals("player2", result);
@@ -32,8 +32,8 @@ public class RockPaperScissorsTest {
 
     @Test
     void GivenIHaveChosenPaperWhenTheOpponentChoosesRockThenIShouldWin() {
-        var playerChoose = "paper";
-        var opponent = "rock";
+        var playerChoose = Moves.PAPER;
+        var opponent = Moves.ROCK;
 
         var result = this.sut.rockPaperScissors(playerChoose, opponent);
         Assertions.assertEquals("player1", result);
@@ -41,8 +41,8 @@ public class RockPaperScissorsTest {
 
     @Test
     void GivenIHaveChosenRockWhenTheOpponentChoosesPaperThenTheOpponentShouldWin() {
-        var playerChoose = "rock";
-        var opponent = "paper";
+        var playerChoose = Moves.ROCK;
+        var opponent = Moves.PAPER;
 
         var result = this.sut.rockPaperScissors(playerChoose, opponent);
         Assertions.assertEquals("player2", result);
@@ -50,8 +50,8 @@ public class RockPaperScissorsTest {
 
     @Test
     void GivenIHaveChosenScissorsWhenTheOpponentChoosesPaperThenIShouldWin() {
-        var playerChoose = "scissors";
-        var opponent = "paper";
+        var playerChoose = Moves.SCISSORS;
+        var opponent = Moves.PAPER;
 
         var result = this.sut.rockPaperScissors(playerChoose, opponent);
         Assertions.assertEquals("player1", result);
@@ -59,8 +59,8 @@ public class RockPaperScissorsTest {
 
     @Test
     void GivenIHaveChosenPaperWhenTheOpponentChoosesScissorsThenTheOpponentShouldWin() {
-        var playerChoose = "paper";
-        var opponent = "scissors";
+        var playerChoose = Moves.PAPER;
+        var opponent = Moves.SCISSORS;
 
         var result = this.sut.rockPaperScissors(playerChoose, opponent);
         Assertions.assertEquals("player2", result);
@@ -68,8 +68,8 @@ public class RockPaperScissorsTest {
 
     @Test
     void GivenIHaveChosenRockWhenTheOpponentChoosesRockThenItShouldBeADraw() {
-        var playerChoose = "rock";
-        var opponent = "rock";
+        var playerChoose = Moves.ROCK;
+        var opponent = Moves.ROCK;
 
         var result = this.sut.rockPaperScissors(playerChoose, opponent);
         Assertions.assertEquals("draw", result);
@@ -77,8 +77,8 @@ public class RockPaperScissorsTest {
 
     @Test
     void GivenIHaveChosenScissorsWhenTheOpponentChoosesScissorsThenItShouldBeADraw() {
-        var playerChoose = "scissors";
-        var opponent = "scissors";
+        var playerChoose = Moves.SCISSORS;
+        var opponent = Moves.SCISSORS;
 
         var result = this.sut.rockPaperScissors(playerChoose, opponent);
         Assertions.assertEquals("draw", result);
@@ -86,8 +86,8 @@ public class RockPaperScissorsTest {
 
     @Test
     void GivenIHaveChosenPaperWhenTheOpponentChoosesPaperThenItShouldBeADraw() {
-        var playerChoose = "paper";
-        var opponent = "paper";
+        var playerChoose = Moves.PAPER;
+        var opponent = Moves.PAPER;
 
         var result = this.sut.rockPaperScissors(playerChoose, opponent);
         Assertions.assertEquals("draw", result);
