@@ -11,6 +11,10 @@ public class RockPaperScissors {
             return "player1";
         }
 
+        if (movePlayer1.equals("scissors") && movePlayer2.equals("paper")) {
+            return "player1";
+        }
+
         return "player2";
     }
 }
