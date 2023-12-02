@@ -74,4 +74,13 @@ public class RockPaperScissorsTest {
         var result = this.sut.rockPaperScissors(playerChoose, opponent);
         Assertions.assertEquals("draw", result);
     }
+
+    @Test
+    void GivenIHaveChosenScissorsWhenTheOpponentChoosesScissorsThenItShouldBeADraw() {
+        var playerChoose = "scissors";
+        var opponent = "scissors";
+
+        var result = this.sut.rockPaperScissors(playerChoose, opponent);
+        Assertions.assertEquals("draw", result);
+    }
 }
