@@ -21,7 +21,7 @@ public class RockPaperScissorsTest {
         var opponent = "scissors";
 
         var result = this.sut.rockPaperScissors(playerChoose, opponent);
-        Assertions.assertEquals("win", result);
+        Assertions.assertEquals("player1", result);
     }
 
 }
