@@ -31,6 +31,15 @@ public class RockPaperScissorsTest {
     }
 
     @Test
+    void GivenIHaveChosenLizardWhenTheOpponentChoosesRockThenTheOpponentWin() {
+        var playerChoose = Moves.LIZARD;
+        var opponent = Moves.ROCK;
+
+        var result = this.sut.rockPaperScissors(playerChoose, opponent);
+        Assertions.assertEquals("player2", result);
+    }
+
+    @Test
     void GivenIHaveChosenScissorsWhenTheOpponentChoosesRockThenTheOpponentWin() {
         var playerChoose = Moves.SCISSORS;
         var opponent = Moves.ROCK;
