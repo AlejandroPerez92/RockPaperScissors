@@ -12,7 +12,7 @@ public enum Moves {
     public boolean isBeatenBy(Moves move) {
         var beats = new HashMap<Moves, List<Moves>>();
         beats.put(Moves.ROCK, List.of(Moves.PAPER));
-        beats.put(Moves.PAPER, List.of(Moves.SCISSORS));
+        beats.put(Moves.PAPER, List.of(Moves.SCISSORS, Moves.LIZARD));
         beats.put(Moves.SCISSORS, List.of(Moves.ROCK));
         beats.put(Moves.LIZARD, List.of(Moves.ROCK));
 
