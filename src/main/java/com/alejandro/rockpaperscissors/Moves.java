@@ -6,7 +6,8 @@ import java.util.List;
 public enum Moves {
     ROCK,
     PAPER,
-    SCISSORS;
+    SCISSORS,
+    LIZARD;
 
     public boolean isBeatenBy(Moves move) {
         var beats = new HashMap<Moves, List<Moves>>();
